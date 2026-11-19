@@ -5,6 +5,8 @@ and uses linear optimization to select an optimal squad, starting XI,
 captain, and transfers — validated via a leakage-safe walk-forward backtest
 on a full past season.
 
+https://fpl-predictor-dashboard.vercel.app/
+
 ## Project status
 
 This project is under active development, built out phase by phase.
