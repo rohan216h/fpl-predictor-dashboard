@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/rohan216h/fpl-predictor/api"
+	"github.com/rohan216h/fpl-predictor-dashboard/api"
 )
 
 func main() {

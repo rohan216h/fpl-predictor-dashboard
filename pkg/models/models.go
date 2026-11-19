@@ -7,7 +7,7 @@ type TeamState struct {
 	TeamValue      float64  `json:"team_value"`
 	FreeTransfers  int      `json:"free_transfers"`
 	ChipsAvailable []string `json:"chips_available"`
-	ChipsUsed      []string `json:"chips_used"`
+	ChipsUsed      []any    `json:"chips_used"`
 }
 
 // HeadlineCaptain represents the captain pick in Overview.

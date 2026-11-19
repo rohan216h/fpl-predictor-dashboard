@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/rohan216h/fpl-predictor/internal/fplapi"
-	"github.com/rohan216h/fpl-predictor/internal/models"
-	"github.com/rohan216h/fpl-predictor/internal/store"
+	"github.com/rohan216h/fpl-predictor-dashboard/pkg/fplapi"
+	"github.com/rohan216h/fpl-predictor-dashboard/pkg/models"
+	"github.com/rohan216h/fpl-predictor-dashboard/pkg/store"
 )
 
 // OverviewHandler serves the unified overview payload for the headline dashboard.

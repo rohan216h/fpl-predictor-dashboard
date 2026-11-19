@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/rohan216h/fpl-predictor/internal/store"
+	"github.com/rohan216h/fpl-predictor-dashboard/pkg/store"
 )
 
 // Handler is the primary Vercel Serverless Function entrypoint.

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rohan216h/fpl-predictor/internal/models"
+	"github.com/rohan216h/fpl-predictor-dashboard/pkg/models"
 )
 
 const (
