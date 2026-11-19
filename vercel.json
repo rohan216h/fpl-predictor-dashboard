@@ -1,0 +1,44 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "functions": {
+    "api/**/*.go": {
+      "includeFiles": "data/dashboard/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/overview",
+      "destination": "/api/overview/index.go"
+    },
+    {
+      "source": "/api/squad",
+      "destination": "/api/squad/index.go"
+    },
+    {
+      "source": "/api/transfers",
+      "destination": "/api/transfers/index.go"
+    },
+    {
+      "source": "/api/captaincy",
+      "destination": "/api/captaincy/index.go"
+    },
+    {
+      "source": "/api/chips",
+      "destination": "/api/chips/index.go"
+    },
+    {
+      "source": "/api/players",
+      "destination": "/api/players/index.go"
+    },
+    {
+      "source": "/api/validation",
+      "destination": "/api/validation/index.go"
+    },
+    {
+      "source": "/api/fixtures",
+      "destination": "/api/fixtures/index.go"
+    }
+  ]
+}
+

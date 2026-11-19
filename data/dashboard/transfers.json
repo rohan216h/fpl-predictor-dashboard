@@ -1,0 +1,373 @@
+{
+  "gameweek": 11,
+  "free_transfers_available": 5,
+  "min_gain_threshold": 1.0,
+  "is_banked": false,
+  "recommended": {
+    "transfers": 4,
+    "action": "TRANSFER",
+    "gain": 1.64,
+    "net_benefit": 1.64,
+    "hits_taken": 0,
+    "hit_cost": 0,
+    "rationale": "Make 4 transfer(s) for a net benefit of +1.64 points.",
+    "out_players": [
+      {
+        "fpl_id": 1,
+        "web_name": "Raya",
+        "position": "GKP",
+        "team": "Arsenal",
+        "price": 6.0,
+        "transfer_score": 3.65
+      },
+      {
+        "fpl_id": 249,
+        "web_name": "Barry",
+        "position": "FWD",
+        "team": "Everton",
+        "price": 5.6,
+        "transfer_score": 3.27
+      },
+      {
+        "fpl_id": 268,
+        "web_name": "King",
+        "position": "MID",
+        "team": "Fulham",
+        "price": 5.5,
+        "transfer_score": 3.52
+      },
+      {
+        "fpl_id": 480,
+        "web_name": "Gibbs-White",
+        "position": "MID",
+        "team": "Nott'm Forest",
+        "price": 7.9,
+        "transfer_score": 4.71
+      }
+    ],
+    "in_players": [
+      {
+        "fpl_id": 110,
+        "web_name": "Rushworth",
+        "position": "GKP",
+        "team": "Coventry City",
+        "price": 4.5,
+        "transfer_score": 2.71
+      },
+      {
+        "fpl_id": 289,
+        "web_name": "Crooks",
+        "position": "MID",
+        "team": "Hull City",
+        "price": 4.5,
+        "transfer_score": 1.24
+      },
+      {
+        "fpl_id": 368,
+        "web_name": "Szoboszlai",
+        "position": "MID",
+        "team": "Liverpool",
+        "price": 7.0,
+        "transfer_score": 4.8
+      },
+      {
+        "fpl_id": 379,
+        "web_name": "Isak",
+        "position": "FWD",
+        "team": "Liverpool",
+        "price": 9.1,
+        "transfer_score": 5.44
+      }
+    ]
+  },
+  "options_evaluated": [
+    {
+      "transfers": 0,
+      "gain": 0.0,
+      "net_benefit": 0.0,
+      "hits_taken": 0,
+      "hit_cost": 0,
+      "out_players": [],
+      "in_players": []
+    },
+    {
+      "transfers": 1,
+      "gain": 0.52,
+      "net_benefit": 0.52,
+      "hits_taken": 0,
+      "hit_cost": 0,
+      "out_players": [
+        {
+          "fpl_id": 268,
+          "web_name": "King",
+          "position": "MID",
+          "team": "Fulham",
+          "price": 5.5,
+          "transfer_score": 3.52
+        }
+      ],
+      "in_players": [
+        {
+          "fpl_id": 124,
+          "web_name": "Groß",
+          "position": "MID",
+          "team": "Brighton",
+          "price": 5.6,
+          "transfer_score": 4.21
+        }
+      ]
+    },
+    {
+      "transfers": 2,
+      "gain": 0.95,
+      "net_benefit": 0.95,
+      "hits_taken": 0,
+      "hit_cost": 0,
+      "out_players": [
+        {
+          "fpl_id": 268,
+          "web_name": "King",
+          "position": "MID",
+          "team": "Fulham",
+          "price": 5.5,
+          "transfer_score": 3.52
+        },
+        {
+          "fpl_id": 480,
+          "web_name": "Gibbs-White",
+          "position": "MID",
+          "team": "Nott'm Forest",
+          "price": 7.9,
+          "transfer_score": 4.71
+        }
+      ],
+      "in_players": [
+        {
+          "fpl_id": 69,
+          "web_name": "Scott",
+          "position": "MID",
+          "team": "Bournemouth",
+          "price": 6.1,
+          "transfer_score": 4.54
+        },
+        {
+          "fpl_id": 368,
+          "web_name": "Szoboszlai",
+          "position": "MID",
+          "team": "Liverpool",
+          "price": 7.0,
+          "transfer_score": 4.8
+        }
+      ]
+    },
+    {
+      "transfers": 3,
+      "gain": 1.38,
+      "net_benefit": 1.38,
+      "hits_taken": 0,
+      "hit_cost": 0,
+      "out_players": [
+        {
+          "fpl_id": 1,
+          "web_name": "Raya",
+          "position": "GKP",
+          "team": "Arsenal",
+          "price": 6.0,
+          "transfer_score": 3.65
+        },
+        {
+          "fpl_id": 249,
+          "web_name": "Barry",
+          "position": "FWD",
+          "team": "Everton",
+          "price": 5.6,
+          "transfer_score": 3.27
+        },
+        {
+          "fpl_id": 480,
+          "web_name": "Gibbs-White",
+          "position": "MID",
+          "team": "Nott'm Forest",
+          "price": 7.9,
+          "transfer_score": 4.71
+        }
+      ],
+      "in_players": [
+        {
+          "fpl_id": 57,
+          "web_name": "Petrović",
+          "position": "GKP",
+          "team": "Bournemouth",
+          "price": 4.5,
+          "transfer_score": 2.72
+        },
+        {
+          "fpl_id": 69,
+          "web_name": "Scott",
+          "position": "MID",
+          "team": "Bournemouth",
+          "price": 6.1,
+          "transfer_score": 4.54
+        },
+        {
+          "fpl_id": 379,
+          "web_name": "Isak",
+          "position": "FWD",
+          "team": "Liverpool",
+          "price": 9.1,
+          "transfer_score": 5.44
+        }
+      ]
+    },
+    {
+      "transfers": 4,
+      "gain": 1.64,
+      "net_benefit": 1.64,
+      "hits_taken": 0,
+      "hit_cost": 0,
+      "out_players": [
+        {
+          "fpl_id": 1,
+          "web_name": "Raya",
+          "position": "GKP",
+          "team": "Arsenal",
+          "price": 6.0,
+          "transfer_score": 3.65
+        },
+        {
+          "fpl_id": 249,
+          "web_name": "Barry",
+          "position": "FWD",
+          "team": "Everton",
+          "price": 5.6,
+          "transfer_score": 3.27
+        },
+        {
+          "fpl_id": 268,
+          "web_name": "King",
+          "position": "MID",
+          "team": "Fulham",
+          "price": 5.5,
+          "transfer_score": 3.52
+        },
+        {
+          "fpl_id": 480,
+          "web_name": "Gibbs-White",
+          "position": "MID",
+          "team": "Nott'm Forest",
+          "price": 7.9,
+          "transfer_score": 4.71
+        }
+      ],
+      "in_players": [
+        {
+          "fpl_id": 110,
+          "web_name": "Rushworth",
+          "position": "GKP",
+          "team": "Coventry City",
+          "price": 4.5,
+          "transfer_score": 2.71
+        },
+        {
+          "fpl_id": 289,
+          "web_name": "Crooks",
+          "position": "MID",
+          "team": "Hull City",
+          "price": 4.5,
+          "transfer_score": 1.24
+        },
+        {
+          "fpl_id": 368,
+          "web_name": "Szoboszlai",
+          "position": "MID",
+          "team": "Liverpool",
+          "price": 7.0,
+          "transfer_score": 4.8
+        },
+        {
+          "fpl_id": 379,
+          "web_name": "Isak",
+          "position": "FWD",
+          "team": "Liverpool",
+          "price": 9.1,
+          "transfer_score": 5.44
+        }
+      ]
+    },
+    {
+      "transfers": 5,
+      "gain": 1.64,
+      "net_benefit": 1.64,
+      "hits_taken": 0,
+      "hit_cost": 0,
+      "out_players": [
+        {
+          "fpl_id": 1,
+          "web_name": "Raya",
+          "position": "GKP",
+          "team": "Arsenal",
+          "price": 6.0,
+          "transfer_score": 3.65
+        },
+        {
+          "fpl_id": 249,
+          "web_name": "Barry",
+          "position": "FWD",
+          "team": "Everton",
+          "price": 5.6,
+          "transfer_score": 3.27
+        },
+        {
+          "fpl_id": 268,
+          "web_name": "King",
+          "position": "MID",
+          "team": "Fulham",
+          "price": 5.5,
+          "transfer_score": 3.52
+        },
+        {
+          "fpl_id": 480,
+          "web_name": "Gibbs-White",
+          "position": "MID",
+          "team": "Nott'm Forest",
+          "price": 7.9,
+          "transfer_score": 4.71
+        }
+      ],
+      "in_players": [
+        {
+          "fpl_id": 605,
+          "web_name": "Yalcouyé",
+          "position": "MID",
+          "team": "Brighton",
+          "price": 4.5,
+          "transfer_score": 3.32
+        },
+        {
+          "fpl_id": 199,
+          "web_name": "Benitez",
+          "position": "GKP",
+          "team": "Crystal Palace",
+          "price": 4.5,
+          "transfer_score": 0.92
+        },
+        {
+          "fpl_id": 368,
+          "web_name": "Szoboszlai",
+          "position": "MID",
+          "team": "Liverpool",
+          "price": 7.0,
+          "transfer_score": 4.8
+        },
+        {
+          "fpl_id": 379,
+          "web_name": "Isak",
+          "position": "FWD",
+          "team": "Liverpool",
+          "price": 9.1,
+          "transfer_score": 5.44
+        }
+      ]
+    }
+  ]
+}

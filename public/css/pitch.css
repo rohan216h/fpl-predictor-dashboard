@@ -1,0 +1,364 @@
+/* ==========================================================================
+   FOOTBALL PITCH VIEW — SIGNATURE FPL SQUAD & FORMATION COMPONENT
+   ========================================================================== */
+
+.squad-view-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Squad Header & Constraint Bar */
+.squad-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+}
+
+.squad-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.formation-badge {
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(0, 255, 133, 0.15);
+  color: var(--fpl-green-neon);
+  border: 1px solid rgba(0, 255, 133, 0.4);
+  letter-spacing: 0.5px;
+}
+
+.squad-stats-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.squad-stat-item {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.squad-stat-item .stat-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.squad-stat-item .stat-val {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.squad-stat-item .stat-val.green {
+  color: var(--fpl-green-neon);
+}
+
+/* Football Pitch Frame */
+.pitch-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.football-pitch {
+  position: relative;
+  width: 100%;
+  min-height: 640px;
+  background: linear-gradient(180deg, #135d33 0%, #177340 50%, #11532c 100%);
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 40px,
+      rgba(0, 0, 0, 0.04) 40px,
+      rgba(0, 0, 0, 0.04) 80px
+    );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 16px 20px 16px;
+}
+
+/* Pitch Field Markings (SVG overlay) */
+.pitch-markings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.pitch-markings line,
+.pitch-markings circle,
+.pitch-markings rect,
+.pitch-markings path {
+  stroke: rgba(255, 255, 255, 0.22);
+  stroke-width: 2px;
+  fill: none;
+}
+
+/* Position Rows on Pitch */
+.pitch-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 6px 0;
+}
+
+@media (max-width: 600px) {
+  .pitch-row {
+    gap: 6px;
+  }
+}
+
+/* Player Pitch Card */
+.pitch-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px;
+  cursor: pointer;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .pitch-card {
+    width: 72px;
+  }
+}
+
+.pitch-card:hover {
+  transform: translateY(-4px) scale(1.04);
+}
+
+.pitch-card:hover .card-jersey-wrap {
+  box-shadow: 0 0 16px rgba(0, 255, 133, 0.45);
+}
+
+/* Jersey Graphic */
+.card-jersey-wrap {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(18, 0, 20, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  transition: box-shadow var(--transition-fast);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+  .card-jersey-wrap {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.jersey-svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Armband Badges (C / VC) */
+.armband-badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.68rem;
+  font-weight: 900;
+  color: #120014;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffffff;
+}
+
+.armband-captain {
+  background: var(--fpl-green-neon);
+}
+
+.armband-vice {
+  background: var(--fpl-magenta-neon);
+  color: #ffffff;
+}
+
+/* Card Info Pill */
+.card-info-box {
+  width: 100%;
+  background: rgba(18, 0, 20, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.card-player-name {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 3px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 600px) {
+  .card-player-name {
+    font-size: 0.68rem;
+    padding: 2px 2px;
+  }
+}
+
+.card-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 6px;
+  background: rgba(0, 0, 0, 0.25);
+  font-size: 0.7rem;
+}
+
+@media (max-width: 600px) {
+  .card-meta-row {
+    font-size: 0.62rem;
+    padding: 2px 4px;
+  }
+}
+
+.card-team-price {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.card-points-badge {
+  font-weight: 800;
+  color: var(--fpl-green-neon);
+}
+
+/* Bench Shelf Section */
+.bench-shelf-container {
+  max-width: 900px;
+  margin: -10px auto 0 auto;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  padding: 16px 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.bench-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.bench-cards-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.bench-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.bench-priority-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--bg-chip);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+}
+
+/* Team Allocation Constraint Indicator */
+.team-limits-card {
+  max-width: 900px;
+  margin: 16px auto 0 auto;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+}
+
+.limits-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.limits-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.team-limit-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.team-limit-chip.full {
+  background: rgba(233, 0, 82, 0.1);
+  border-color: rgba(233, 0, 82, 0.35);
+  color: var(--fpl-magenta-neon);
+}
+

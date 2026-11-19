@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPL Predictor & Squad Optimizer | Rohan's Placement Portfolio</title>
+  <meta name="description" content="Machine learning points predictor and PuLP linear optimization squad engine for Fantasy Premier League.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cabinet+Grotesk:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/pitch.css">
+</head>
+<body>
+  <div id="app" class="app-layout">
+    <!-- Top Global Header -->
+    <header class="app-header">
+      <div class="header-inner container">
+        <div class="brand-group">
+          <div class="fpl-badge-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4z" fill="#00ff85"/>
+              <path d="M12 4.18L4.8 7.38v4.62c0 4.44 3.07 8.59 7.2 9.6 4.13-1.01 7.2-5.16 7.2-9.6V7.38L12 4.18z" fill="#38003c"/>
+              <polygon points="12,7 13.8,10.6 17.8,11.2 14.9,14 15.6,18 12,16.1 8.4,18 9.1,14 6.2,11.2 10.2,10.6" fill="#00ff85"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">FPL OPTIMIZER</span>
+            <span class="brand-subtitle">ML Predictor & LP Squad Engine</span>
+          </div>
+        </div>
+
+        <!-- Global Gameweek Pill & Status -->
+        <div class="header-meta">
+          <div class="status-pill" id="gameweek-pill">
+            <span class="status-dot live" id="api-status-dot"></span>
+            <span id="gameweek-label">GW5 Live</span>
+          </div>
+          <div class="deadline-pill" id="deadline-pill" title="Next deadline countdown">
+            <span class="deadline-icon">⏱</span>
+            <span id="deadline-countdown">Deadline countdown</span>
+          </div>
+          <!-- Theme Toggle -->
+          <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Light / Dark Purple Theme">
+            <span class="theme-icon light" aria-hidden="true">☀️</span>
+            <span class="theme-icon dark" aria-hidden="true">🌙</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="app-nav" aria-label="Main Navigation">
+        <div class="nav-inner container">
+          <ul class="nav-list" role="tablist">
+            <li role="presentation"><a href="#/overview" class="nav-link active" data-page="overview" role="tab">Overview</a></li>
+            <li role="presentation"><a href="#/squad" class="nav-link" data-page="squad" role="tab">Squad</a></li>
+            <li role="presentation"><a href="#/transfers" class="nav-link" data-page="transfers" role="tab">Transfers</a></li>
+            <li role="presentation"><a href="#/captaincy" class="nav-link" data-page="captaincy" role="tab">Captaincy</a></li>
+            <li role="presentation"><a href="#/chips" class="nav-link" data-page="chips" role="tab">Chips</a></li>
+            <li role="presentation"><a href="#/players" class="nav-link" data-page="players" role="tab">Player Explorer</a></li>
+            <li role="presentation"><a href="#/validation" class="nav-link" data-page="validation" role="tab">Model &amp; Validation</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main id="main-content" class="main-content container" role="main">
+      <div id="page-loader" class="page-loader">
+        <div class="fpl-spinner"></div>
+        <p>Crunching predictions &amp; solving linear programs...</p>
+      </div>
+      <div id="page-content" class="page-content" style="display: none;"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-inner container">
+        <div class="footer-left">
+          <p><strong>FPL Points Predictor &amp; Squad Optimizer</strong> &bull; Placement Portfolio Project</p>
+          <p class="footer-subtext">Engineered by Rohan Holikatti &bull; GitHub: <code>rohan216h/fpl-predictor</code></p>
+        </div>
+        <div class="footer-right">
+          <span class="tag-pill">Python ML Pipeline</span>
+          <span class="tag-pill">PuLP Linear Solver</span>
+          <span class="tag-pill">Go Vercel Serverless</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Player Detail Modal Drawer -->
+  <div id="player-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-drawer" role="dialog" aria-modal="true" aria-labelledby="modal-player-name">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close details">&times;</button>
+      <div id="modal-content" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/components/fdr.js"></script>
+  <script src="/js/components/pitch.js"></script>
+  <script src="/js/pages/overview.js"></script>
+  <script src="/js/pages/squad.js"></script>
+  <script src="/js/pages/transfers.js"></script>
+  <script src="/js/pages/captaincy.js"></script>
+  <script src="/js/pages/chips.js"></script>
+  <script src="/js/pages/players.js"></script>
+  <script src="/js/pages/validation.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
+

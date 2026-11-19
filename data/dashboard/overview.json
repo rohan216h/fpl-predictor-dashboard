@@ -1,0 +1,54 @@
+{
+  "gameweek": 11,
+  "season": "2026-27",
+  "team_state": {
+    "team_name": "Green Arrow",
+    "bank": 0.2,
+    "team_value": 100.2,
+    "free_transfers": 5,
+    "chips_available": [
+      "freehit",
+      "bboost",
+      "3xc"
+    ],
+    "chips_used": [
+      {
+        "name": "wildcard",
+        "gameweek": 4
+      }
+    ]
+  },
+  "headline_recommendations": {
+    "captain": {
+      "name": "Haaland",
+      "team": "Man City",
+      "predicted_points": 10.31,
+      "captaincy_score": 12.21,
+      "fixture_difficulty": 2
+    },
+    "transfer": {
+      "action": "TRANSFER",
+      "transfers": 4,
+      "gain": 1.64,
+      "net_benefit": 1.64,
+      "rationale": "Make 4 transfer(s) for a net benefit of +1.64 points."
+    },
+    "triple_captain": {
+      "recommendation": "PLAY",
+      "candidate": "Haaland",
+      "score": 12.21,
+      "threshold": 9.73,
+      "explanation": "Haaland's captaincy score (12.21) exceeds the dynamic threshold (9.73) at week 11 of 19 (first half). Optimal time to trigger Triple Captain."
+    }
+  },
+  "squad_summary": {
+    "formation": "3-4-3",
+    "starters_predicted_points": 53.97,
+    "captain_bonus_points": 10.31,
+    "total_predicted_points": 64.28,
+    "bench_predicted_points": 11.08,
+    "budget_cap": 99.5,
+    "budget_used": 99.5,
+    "bank_remaining": 0.0
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "current_gameweek": 11,
+  "triple_captain": {
+    "status": "AVAILABLE",
+    "current_threshold": 9.73,
+    "top_candidate": "Haaland",
+    "top_score": 12.21,
+    "should_play": true,
+    "recommendation": "PLAY",
+    "explanation": "Haaland's captaincy score (12.21) exceeds the dynamic threshold (9.73) at week 11 of 19 (first half). Optimal time to trigger Triple Captain.",
+    "threshold_curve": [
+      {
+        "gameweek": 1,
+        "gw_in_half": 1,
+        "half": 1,
+        "threshold": 14.98,
+        "historical_best": 8.09
+      },
+      {
+        "gameweek": 2,
+        "gw_in_half": 2,
+        "half": 1,
+        "threshold": 13.72,
+        "historical_best": 9.75
+      },
+      {
+        "gameweek": 3,
+        "gw_in_half": 3,
+        "half": 1,
+        "threshold": 12.26,
+        "historical_best": 9.73
+      },
+      {
+        "gameweek": 4,
+        "gw_in_half": 4,
+        "half": 1,
+        "threshold": 10.99,
+        "historical_best": 15.01
+      },
+      {
+        "gameweek": 5,
+        "gw_in_half": 5,
+        "half": 1,
+        "threshold": 10.76,
+        "historical_best": 14.97
+      },
+      {
+        "gameweek": 6,
+        "gw_in_half": 6,
+        "half": 1,
+        "threshold": 10.48,
+        "historical_best": 12.77
+      },
+      {
+        "gameweek": 7,
+        "gw_in_half": 7,
+        "half": 1,
+        "threshold": 10.18,
+        "historical_best": 10.68
+      },
+      {
+        "gameweek": 8,
+        "gw_in_half": 8,
+        "half": 1,
+        "threshold": 9.94,
+        "historical_best": 8.53
+      },
+      {
+        "gameweek": 9,
+        "gw_in_half": 9,
+        "half": 1,
+        "threshold": 9.81,
+        "historical_best": 6.81
+      },
+      {
+        "gameweek": 10,
+        "gw_in_half": 10,
+        "half": 1,
+        "threshold": 9.74,
+        "historical_best": 7.63
+      },
+      {
+        "gameweek": 11,
+        "gw_in_half": 11,
+        "half": 1,
+        "threshold": 9.73,
+        "historical_best": 7.65
+      },
+      {
+        "gameweek": 12,
+        "gw_in_half": 12,
+        "half": 1,
+        "threshold": 9.67,
+        "historical_best": 7.79
+      },
+      {
+        "gameweek": 13,
+        "gw_in_half": 13,
+        "half": 1,
+        "threshold": 9.64,
+        "historical_best": 8.11
+      },
+      {
+        "gameweek": 14,
+        "gw_in_half": 14,
+        "half": 1,
+        "threshold": 9.56,
+        "historical_best": 8.66
+      },
+      {
+        "gameweek": 15,
+        "gw_in_half": 15,
+        "half": 1,
+        "threshold": 9.32,
+        "historical_best": 6.76
+      },
+      {
+        "gameweek": 16,
+        "gw_in_half": 16,
+        "half": 1,
+        "threshold": 9.12,
+        "historical_best": 8.59
+      },
+      {
+        "gameweek": 17,
+        "gw_in_half": 17,
+        "half": 1,
+        "threshold": 9.01,
+        "historical_best": 9.02
+      },
+      {
+        "gameweek": 18,
+        "gw_in_half": 18,
+        "half": 1,
+        "threshold": 9.0,
+        "historical_best": 7.33
+      },
+      {
+        "gameweek": 19,
+        "gw_in_half": 19,
+        "half": 1,
+        "threshold": 8.95,
+        "historical_best": 7.89
+      },
+      {
+        "gameweek": 20,
+        "gw_in_half": 1,
+        "half": 2,
+        "threshold": 14.98,
+        "historical_best": 9.63
+      },
+      {
+        "gameweek": 21,
+        "gw_in_half": 2,
+        "half": 2,
+        "threshold": 13.72,
+        "historical_best": 9.29
+      },
+      {
+        "gameweek": 22,
+        "gw_in_half": 3,
+        "half": 2,
+        "threshold": 12.26,
+        "historical_best": 8.79
+      },
+      {
+        "gameweek": 23,
+        "gw_in_half": 4,
+        "half": 2,
+        "threshold": 10.99,
+        "historical_best": 7.49
+      },
+      {
+        "gameweek": 24,
+        "gw_in_half": 5,
+        "half": 2,
+        "threshold": 10.76,
+        "historical_best": 8.94
+      },
+      {
+        "gameweek": 25,
+        "gw_in_half": 6,
+        "half": 2,
+        "threshold": 10.48,
+        "historical_best": 19.65
+      },
+      {
+        "gameweek": 26,
+        "gw_in_half": 7,
+        "half": 2,
+        "threshold": 10.18,
+        "historical_best": 7.28
+      },
+      {
+        "gameweek": 27,
+        "gw_in_half": 8,
+        "half": 2,
+        "threshold": 9.94,
+        "historical_best": 9.65
+      },
+      {
+        "gameweek": 28,
+        "gw_in_half": 9,
+        "half": 2,
+        "threshold": 9.81,
+        "historical_best": 9.0
+      },
+      {
+        "gameweek": 29,
+        "gw_in_half": 10,
+        "half": 2,
+        "threshold": 9.74,
+        "historical_best": 6.23
+      },
+      {
+        "gameweek": 30,
+        "gw_in_half": 11,
+        "half": 2,
+        "threshold": 9.73,
+        "historical_best": 10.99
+      },
+      {
+        "gameweek": 31,
+        "gw_in_half": 12,
+        "half": 2,
+        "threshold": 9.67,
+        "historical_best": 8.08
+      },
+      {
+        "gameweek": 32,
+        "gw_in_half": 13,
+        "half": 2,
+        "threshold": 9.64,
+        "historical_best": 9.9
+      },
+      {
+        "gameweek": 33,
+        "gw_in_half": 14,
+        "half": 2,
+        "threshold": 9.56,
+        "historical_best": 10.24
+      },
+      {
+        "gameweek": 34,
+        "gw_in_half": 15,
+        "half": 2,
+        "threshold": 9.32,
+        "historical_best": 5.5
+      },
+      {
+        "gameweek": 35,
+        "gw_in_half": 16,
+        "half": 2,
+        "threshold": 9.12,
+        "historical_best": 5.92
+      },
+      {
+        "gameweek": 36,
+        "gw_in_half": 17,
+        "half": 2,
+        "threshold": 9.01,
+        "historical_best": 6.82
+      },
+      {
+        "gameweek": 37,
+        "gw_in_half": 18,
+        "half": 2,
+        "threshold": 9.0,
+        "historical_best": 5.91
+      },
+      {
+        "gameweek": 38,
+        "gw_in_half": 19,
+        "half": 2,
+        "threshold": 8.95,
+        "historical_best": 6.06
+      }
+    ]
+  },
+  "unbuilt_chips": [
+    {
+      "id": "wildcard",
+      "title": "Wildcard",
+      "status": "not_built",
+      "badge": "Planned (Phase 7)",
+      "description": "Full squad rebuild within budget without point deductions. Evaluates long-term fixture swings.",
+      "available": false
+    },
+    {
+      "id": "freehit",
+      "title": "Free Hit",
+      "status": "not_built",
+      "badge": "Planned (Phase 7)",
+      "description": "Temporary 1-gameweek squad replacement targeting major Blank or Double Gameweeks.",
+      "available": true
+    },
+    {
+      "id": "bboost",
+      "title": "Bench Boost",
+      "status": "not_built",
+      "badge": "Planned (Phase 7)",
+      "description": "Counts all 4 substitute players' points towards your gameweek score.",
+      "available": true
+    }
+  ]
+}

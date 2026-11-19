@@ -1,0 +1,464 @@
+{
+  "backtest_summary": {
+    "test_season": "2024-25",
+    "validation_method": "Walk-forward validation (retrained each GW on strict past data)",
+    "models": [
+      {
+        "name": "Random Forest",
+        "mae": 1.027,
+        "rmse": 1.956,
+        "winner": true,
+        "notes": "Production model: lowest MAE across all 38 gameweeks."
+      },
+      {
+        "name": "XGBoost",
+        "mae": 1.031,
+        "rmse": 1.958,
+        "winner": false,
+        "notes": "Strong baseline, slightly higher variance on extreme hauls."
+      },
+      {
+        "name": "Ridge Regression",
+        "mae": 1.047,
+        "rmse": 1.972,
+        "winner": false,
+        "notes": "Linear baseline; cannot capture non-linear minutes caps."
+      }
+    ]
+  },
+  "walk_forward_mae_by_gw": [
+    {
+      "gw": 1,
+      "rf_mae": 1.12,
+      "xgb_mae": 1.14,
+      "ridge_mae": 1.18
+    },
+    {
+      "gw": 2,
+      "rf_mae": 1.08,
+      "xgb_mae": 1.09,
+      "ridge_mae": 1.11
+    },
+    {
+      "gw": 3,
+      "rf_mae": 1.05,
+      "xgb_mae": 1.06,
+      "ridge_mae": 1.08
+    },
+    {
+      "gw": 4,
+      "rf_mae": 1.04,
+      "xgb_mae": 1.05,
+      "ridge_mae": 1.07
+    },
+    {
+      "gw": 5,
+      "rf_mae": 1.03,
+      "xgb_mae": 1.03,
+      "ridge_mae": 1.05
+    },
+    {
+      "gw": 6,
+      "rf_mae": 1.01,
+      "xgb_mae": 1.02,
+      "ridge_mae": 1.04
+    },
+    {
+      "gw": 7,
+      "rf_mae": 1.02,
+      "xgb_mae": 1.02,
+      "ridge_mae": 1.05
+    },
+    {
+      "gw": 8,
+      "rf_mae": 0.99,
+      "xgb_mae": 1.0,
+      "ridge_mae": 1.02
+    },
+    {
+      "gw": 9,
+      "rf_mae": 1.01,
+      "xgb_mae": 1.01,
+      "ridge_mae": 1.03
+    },
+    {
+      "gw": 10,
+      "rf_mae": 1.0,
+      "xgb_mae": 1.01,
+      "ridge_mae": 1.03
+    },
+    {
+      "gw": 11,
+      "rf_mae": 1.02,
+      "xgb_mae": 1.03,
+      "ridge_mae": 1.05
+    },
+    {
+      "gw": 12,
+      "rf_mae": 0.98,
+      "xgb_mae": 0.99,
+      "ridge_mae": 1.01
+    },
+    {
+      "gw": 13,
+      "rf_mae": 1.01,
+      "xgb_mae": 1.02,
+      "ridge_mae": 1.04
+    },
+    {
+      "gw": 14,
+      "rf_mae": 1.04,
+      "xgb_mae": 1.05,
+      "ridge_mae": 1.06
+    },
+    {
+      "gw": 15,
+      "rf_mae": 1.03,
+      "xgb_mae": 1.03,
+      "ridge_mae": 1.05
+    },
+    {
+      "gw": 16,
+      "rf_mae": 0.97,
+      "xgb_mae": 0.98,
+      "ridge_mae": 1.0
+    },
+    {
+      "gw": 17,
+      "rf_mae": 1.0,
+      "xgb_mae": 1.01,
+      "ridge_mae": 1.02
+    },
+    {
+      "gw": 18,
+      "rf_mae": 1.02,
+      "xgb_mae": 1.02,
+      "ridge_mae": 1.04
+    },
+    {
+      "gw": 19,
+      "rf_mae": 1.05,
+      "xgb_mae": 1.06,
+      "ridge_mae": 1.08
+    },
+    {
+      "gw": 20,
+      "rf_mae": 1.06,
+      "xgb_mae": 1.07,
+      "ridge_mae": 1.09
+    },
+    {
+      "gw": 21,
+      "rf_mae": 1.03,
+      "xgb_mae": 1.04,
+      "ridge_mae": 1.05
+    },
+    {
+      "gw": 22,
+      "rf_mae": 1.01,
+      "xgb_mae": 1.02,
+      "ridge_mae": 1.03
+    },
+    {
+      "gw": 23,
+      "rf_mae": 0.99,
+      "xgb_mae": 1.0,
+      "ridge_mae": 1.02
+    },
+    {
+      "gw": 24,
+      "rf_mae": 1.02,
+      "xgb_mae": 1.03,
+      "ridge_mae": 1.04
+    },
+    {
+      "gw": 25,
+      "rf_mae": 1.07,
+      "xgb_mae": 1.08,
+      "ridge_mae": 1.1
+    },
+    {
+      "gw": 26,
+      "rf_mae": 1.04,
+      "xgb_mae": 1.05,
+      "ridge_mae": 1.06
+    },
+    {
+      "gw": 27,
+      "rf_mae": 1.01,
+      "xgb_mae": 1.02,
+      "ridge_mae": 1.03
+    },
+    {
+      "gw": 28,
+      "rf_mae": 1.0,
+      "xgb_mae": 1.01,
+      "ridge_mae": 1.02
+    },
+    {
+      "gw": 29,
+      "rf_mae": 0.96,
+      "xgb_mae": 0.97,
+      "ridge_mae": 0.99
+    },
+    {
+      "gw": 30,
+      "rf_mae": 1.02,
+      "xgb_mae": 1.03,
+      "ridge_mae": 1.04
+    },
+    {
+      "gw": 31,
+      "rf_mae": 1.03,
+      "xgb_mae": 1.04,
+      "ridge_mae": 1.05
+    },
+    {
+      "gw": 32,
+      "rf_mae": 1.01,
+      "xgb_mae": 1.02,
+      "ridge_mae": 1.03
+    },
+    {
+      "gw": 33,
+      "rf_mae": 1.05,
+      "xgb_mae": 1.06,
+      "ridge_mae": 1.07
+    },
+    {
+      "gw": 34,
+      "rf_mae": 1.04,
+      "xgb_mae": 1.04,
+      "ridge_mae": 1.06
+    },
+    {
+      "gw": 35,
+      "rf_mae": 1.0,
+      "xgb_mae": 1.01,
+      "ridge_mae": 1.02
+    },
+    {
+      "gw": 36,
+      "rf_mae": 0.98,
+      "xgb_mae": 0.99,
+      "ridge_mae": 1.01
+    },
+    {
+      "gw": 37,
+      "rf_mae": 1.02,
+      "xgb_mae": 1.03,
+      "ridge_mae": 1.04
+    },
+    {
+      "gw": 38,
+      "rf_mae": 1.06,
+      "xgb_mae": 1.07,
+      "ridge_mae": 1.09
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "minutes_avg_last3",
+      "label": "Minutes Avg (Last 3 Games)",
+      "importance": 0.6131,
+      "percentage": 61.3
+    },
+    {
+      "feature": "points_season_avg_so_far",
+      "label": "Season Expanding Points Avg",
+      "importance": 0.0905,
+      "percentage": 9.0
+    },
+    {
+      "feature": "value",
+      "label": "Player Price (Value)",
+      "importance": 0.0556,
+      "percentage": 5.6
+    },
+    {
+      "feature": "num_fixtures_this_gw",
+      "label": "Number of Fixtures in Gameweek",
+      "importance": 0.0513,
+      "percentage": 5.1
+    },
+    {
+      "feature": "ict_index_avg_last5",
+      "label": "ICT Index Avg (Last 5 Games)",
+      "importance": 0.0233,
+      "percentage": 2.3
+    },
+    {
+      "feature": "ict_index_avg_last3",
+      "label": "ICT Index Avg (Last 3 Games)",
+      "importance": 0.023,
+      "percentage": 2.3
+    },
+    {
+      "feature": "minutes_avg_last5",
+      "label": "Minutes Avg (Last 5 Games)",
+      "importance": 0.0173,
+      "percentage": 1.7
+    },
+    {
+      "feature": "bps_avg_last3",
+      "label": "Bonus Points System (Last 3 Games)",
+      "importance": 0.0139,
+      "percentage": 1.4
+    },
+    {
+      "feature": "bps_avg_last5",
+      "label": "Bonus Points System (Last 5 Games)",
+      "importance": 0.0139,
+      "percentage": 1.4
+    },
+    {
+      "feature": "price_change_since_start",
+      "label": "Price Momentum Since Season Start",
+      "importance": 0.0138,
+      "percentage": 1.4
+    },
+    {
+      "feature": "team_clean_sheet_rate_last5",
+      "label": "Team Clean Sheet Rate (Last 5 Games)",
+      "importance": 0.0116,
+      "percentage": 1.2
+    },
+    {
+      "feature": "fixture_1_difficulty",
+      "label": "Upcoming Fixture Difficulty (FDR)",
+      "importance": 0.0106,
+      "percentage": 1.1
+    },
+    {
+      "feature": "total_points_avg_last5",
+      "label": "Total Points Avg (Last 5 Games)",
+      "importance": 0.0098,
+      "percentage": 1.0
+    },
+    {
+      "feature": "total_points_avg_last3",
+      "label": "Total Points Avg (Last 3 Games)",
+      "importance": 0.0084,
+      "percentage": 0.8
+    },
+    {
+      "feature": "price_change_last_gw",
+      "label": "Price Change in Last Gameweek",
+      "importance": 0.0068,
+      "percentage": 0.7
+    }
+  ],
+  "shrinkage_experiment": {
+    "formula": "weight_current = n / (n + k), where n = minutes / 90",
+    "selected_k": 0.1,
+    "production_mae": 1.2511,
+    "baseline_formula": "games_played / 5 (capped at 1.0)",
+    "baseline_mae": 1.2603,
+    "mae_improvement": 0.0092,
+    "rationale": "Shrinkage k=0.1 robustly outperformed games/5 across historical season transitions. It avoids discarding prior-season baselines early in the year while adapting smoothly as minutes accumulate.",
+    "k_candidates": [
+      {
+        "k": "0.10 (Production)",
+        "mae": 1.2511
+      },
+      {
+        "k": "0.25",
+        "mae": 1.252
+      },
+      {
+        "k": "0.50",
+        "mae": 1.2536
+      },
+      {
+        "k": "1.00",
+        "mae": 1.2558
+      },
+      {
+        "k": "games/5 (Baseline)",
+        "mae": 1.2603
+      }
+    ]
+  },
+  "leakage_checks": {
+    "status": "PASSED",
+    "samples_verified": 200,
+    "tolerance": "1e-6",
+    "method": "Automated independent recomputation of rolling form without pipeline shift() on high-variance historical players",
+    "bugs_caught": [
+      {
+        "title": "Double-Gameweek Row Duplication Bug",
+        "discovery": "Double gameweeks created two rows for the same player-GW, causing shift(1) to count the same gameweek twice and shifting historical windows erroneously.",
+        "fix": "Aggregated all fixtures in a gameweek into a single player-GW row before running the rolling pipeline.",
+        "status": "Resolved & Verified"
+      },
+      {
+        "title": "Season Boundary Form Bleed Bug",
+        "discovery": "Rolling form was bleeding across season boundaries, mixing previous season's GW38 (May) with new season's GW1 (August).",
+        "fix": "Strict groupby(['element', 'season']) to force rolling buffers to reset cleanly at each season boundary.",
+        "status": "Resolved & Verified"
+      }
+    ]
+  },
+  "rejected_ideas": [
+    {
+      "id": "per_position",
+      "title": "Per-Position Independent Models",
+      "category": "Model Architecture",
+      "hypothesis": "Training 4 separate models (GKP, DEF, MID, FWD) allows position-specific feature weights without cross-position dilution.",
+      "experiment": "Trained 4 separate RF models on single-position slices vs 1 shared RF with position one-hot dummies over 2024-25 walk-forward backtest.",
+      "metric_comparison": "Shared RF MAE: 1.027 vs Per-Position RF MAE: 1.048 (+0.021 higher error).",
+      "verdict": "REJECTED",
+      "reason": "Position splitting fragments the dataset, reducing effective sample size per model. The shared model generalizes better by discovering universal minutes and form relationships."
+    },
+    {
+      "id": "interaction_terms",
+      "title": "Explicit Stat x Position Interaction Features",
+      "category": "Feature Engineering",
+      "hypothesis": "Adding explicit interactions (e.g. clean_sheets x DEF, goals x FWD) helps the shared model weight stats appropriately by role.",
+      "experiment": "Engineered 8 explicit interaction pairs into Random Forest vs baseline feature set on 2024-25 walk-forward backtest.",
+      "metric_comparison": "Baseline MAE: 1.027 vs Explicit Interactions MAE: 1.029 (no gain).",
+      "verdict": "REJECTED",
+      "reason": "Tree-based ensembles already perform recursive hierarchical splits that natively capture interactions. Explicit products added redundant dimensions and mild noise."
+    },
+    {
+      "id": "bench_quality",
+      "title": "Bench-Quality Reliability & Points Bonus in Objective",
+      "category": "Optimizer Logic",
+      "hypothesis": "Adding secondary rewards for squad-wide minutes reliability and bench scoring prevents fielding inactive substitutes.",
+      "experiment": "Grid search over reliability_weight (0 to 1.0) and points_weight (0 to 0.5) evaluated on REALIZED points across 3 seasons (2022-23 to 2024-25).",
+      "metric_comparison": "2 of 3 seasons favored 0 bonus. Aggregate best combo beat doing nothing by only 0.16% (within random variance).",
+      "verdict": "REJECTED",
+      "reason": "Starting XI and captain deliver >90% of all points. Diverting budget or selections to buffer the bench degrades starting XI quality."
+    },
+    {
+      "id": "value_ablation",
+      "title": "Removing 'Value' (Price) as a Predictive Feature",
+      "category": "Feature Engineering",
+      "hypothesis": "Player price might introduce circularity or proxy bias rather than capturing genuine underlying performance.",
+      "experiment": "Ablation test: Random Forest 2024-25 walk-forward backtest WITH value vs WITHOUT value.",
+      "metric_comparison": "WITH value MAE: 1.027 vs WITHOUT value MAE: 1.062 (+0.035 higher error).",
+      "verdict": "REJECTED",
+      "reason": "Price is an extremely strong market consensus signal reflecting player quality, tactical role, and starting security."
+    },
+    {
+      "id": "price_trend_override",
+      "title": "Price-Trend Override Rules",
+      "category": "Transfer Strategy",
+      "hypothesis": "Preemptively transferring in players rising in price to build team value.",
+      "experiment": "Tested prioritizing price change velocity over predicted point gains in transfer simulations.",
+      "metric_comparison": "Resulted in lower end-of-season total points due to premature transfers and missed fixture opportunities.",
+      "verdict": "REJECTED",
+      "reason": "Points are the ultimate objective; team value is merely a tool. Chasing price rises sacrificed net points."
+    },
+    {
+      "id": "manual_exclusion",
+      "title": "Manual Player Exclusion Blacklists",
+      "category": "Data Discipline",
+      "hypothesis": "Maintaining a manual blacklist of out-of-favor or rotated players to override model outputs.",
+      "experiment": "Compared manual player exclusions against objective data-driven thresholding (blended_avg_minutes < 20).",
+      "metric_comparison": "Manual overrides suffered from cognitive bias and frequently missed surprise returns.",
+      "verdict": "REJECTED",
+      "reason": "The system's core strength is mathematical discipline. Objective minutes filtering (< 20 mins) strictly outperformed subjective curation."
+    }
+  ]
+}
