@@ -7,6 +7,8 @@ import (
 	"os"
 	"path/filepath"
 	"sync"
+
+	dashboarddata "github.com/rohan216h/fpl-predictor-dashboard/data/dashboard"
 )
 
 var (
@@ -68,6 +70,15 @@ func LoadDataFile(filename string) ([]byte, error) {
 	}
 	cacheMu.RUnlock()
 
+	// 1. First check embedded binary data (production on Vercel)
+	if embedded, ok := dashboarddata.Get(filename); ok && len(embedded) > 0 {
+		cacheMu.Lock()
+		cache[filename] = embedded
+		cacheMu.Unlock()
+		return embedded, nil
+	}
+
+	// 2. Fall back to filesystem lookup
 	path, err := FindDataFile(filename)
 	if err != nil {
 		return nil, err
