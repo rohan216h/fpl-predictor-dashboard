@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/rohan216h/fpl-predictor-dashboard/api"
+	"github.com/rohan216h/fpl-predictor-dashboard/pkg/handlers"
 )
 
 func main() {
@@ -18,14 +18,14 @@ func main() {
 	mux := http.NewServeMux()
 
 	// Register API endpoints
-	mux.HandleFunc("/api/overview", api.OverviewHandler)
-	mux.HandleFunc("/api/squad", api.SquadHandler)
-	mux.HandleFunc("/api/transfers", api.TransfersHandler)
-	mux.HandleFunc("/api/captaincy", api.CaptaincyHandler)
-	mux.HandleFunc("/api/chips", api.ChipsHandler)
-	mux.HandleFunc("/api/players", api.PlayersHandler)
-	mux.HandleFunc("/api/validation", api.ValidationHandler)
-	mux.HandleFunc("/api/fixtures", api.FixturesHandler)
+	mux.HandleFunc("/api/overview", handlers.OverviewHandler)
+	mux.HandleFunc("/api/squad", handlers.SquadHandler)
+	mux.HandleFunc("/api/transfers", handlers.TransfersHandler)
+	mux.HandleFunc("/api/captaincy", handlers.CaptaincyHandler)
+	mux.HandleFunc("/api/chips", handlers.ChipsHandler)
+	mux.HandleFunc("/api/players", handlers.PlayersHandler)
+	mux.HandleFunc("/api/validation", handlers.ValidationHandler)
+	mux.HandleFunc("/api/fixtures", handlers.FixturesHandler)
 
 	// Static frontend
 	staticDir := "public"
